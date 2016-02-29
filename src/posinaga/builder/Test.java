@@ -9,9 +9,11 @@ public class Test {
 		Owner o2 = new Owner("Sam");
 		Owner o3 = new Owner("Matt");
 		
-		Auto auto =  new Auto("Nisan Lift", 25000, 2015, "Red",180);
+		Auto auto =  new Auto("Nisan Lift", 25000, 2015, Color.Red,180);
+		auto.addOwner(o1);
+		auto.addOwner(o3);
 		
-		BetterAuto betterAuto;
+		BetterAuto betterAuto = null;
 		try {
 			betterAuto = new BetterAuto(new AutoBuilder("Tesla Model S")
 					.color(Color.White)
@@ -22,6 +24,11 @@ public class Test {
 					.owners(o3)
 					.build());
 		} catch (Exception e) {}
+		
+		System.out.println(auto);
+		System.out.println(betterAuto);
 	}
+	
+	
 
 }

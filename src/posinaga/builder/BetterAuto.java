@@ -71,4 +71,61 @@ public class BetterAuto {
 			
 		}
 
+		public double getPrice() {
+			return price;
+		}
+
+		public void setPrice(double price) {
+			this.price = price;
+		}
+
+		public int getYear() {
+			return year;
+		}
+
+		public void setYear(int year) {
+			this.year = year;
+		}
+
+		public Color getColor() {
+			return color;
+		}
+
+		public void setColor(Color color) {
+			this.color = color;
+		}
+
+		public double getMaxSpeed() {
+			return maxSpeed;
+		}
+
+		public void setMaxSpeed(double maxSpeed) {
+			this.maxSpeed = maxSpeed;
+		}
+
+		public List<Owner> getOwners() {
+			return owners;
+		}
+
+		public void setOwners(List<Owner> owners) {
+			this.owners = owners;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		@Override
+		public String toString() {
+			return "BetterAuto [name=" + name + ", price=" + price + ", year=" + year + ", color=" + color
+					+ ", maxSpeed=" + maxSpeed + ", owners=" + getOwnersString() + "]";
+		}
+		
+		public String getOwnersString(){
+			String str = "";
+			for(Owner o: owners)
+				str += o.toString() + " ";
+			return str;
+		}
+
 }
