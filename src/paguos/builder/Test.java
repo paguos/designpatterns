@@ -1,6 +1,6 @@
-package posinaga.builder;
+package paguos.builder;
 
-import posinaga.builder.BetterAuto.AutoBuilder;
+import paguos.builder.BetterAuto.AutoBuilder;
 
 public class Test {
 	
