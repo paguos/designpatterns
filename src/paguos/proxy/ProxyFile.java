@@ -32,9 +32,5 @@ public class ProxyFile  implements File{
 		}
 		realFile.write();
 	}
-	
-	
-	
-	
 
 }
