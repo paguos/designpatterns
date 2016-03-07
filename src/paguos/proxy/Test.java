@@ -6,7 +6,9 @@ public class Test {
 		
 		File proxyFile= new ProxyFile("text.html");
 		
+		proxyFile.open();
 		proxyFile.write();
+		proxyFile.save();
 		proxyFile.write();
 		proxyFile.save();
 
