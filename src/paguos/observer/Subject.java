@@ -23,6 +23,10 @@ public class Subject {
 		notifyObservers();
 	}
 	
+	public void removeObserver(Observer observer){
+        observers.remove(observer);
+    }
+	
 	public void registerObserver(Observer...observers){
 		for(Observer o: observers)
 			this.observers.add(o);
