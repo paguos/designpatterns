@@ -11,7 +11,7 @@ public class BetterLogger {
 	private final String logFile = "demo_better_log.txt";
 	private PrintWriter writer;
 	
-	public BetterLogger() {
+	private BetterLogger() {
 		try {
 			FileWriter fw = new FileWriter(logFile);
 		    writer = new PrintWriter(fw, true);
